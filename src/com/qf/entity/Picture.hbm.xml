@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.qf.entity">
+	<class name="Picture" table="picture">
+		<id name="picId" column="picId">
+			<generator class="native"></generator>
+		</id>
+		<property name="picName" column="picName"></property>
+		<property name="picUrl" column="picUrl"></property>
+	</class>
+</hibernate-mapping>

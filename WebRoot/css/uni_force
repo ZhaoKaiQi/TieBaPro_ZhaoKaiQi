@@ -1,0 +1,866 @@
+@CHARSET "UTF-8";
+.clearfix:after {
+	content: '\20';
+	display: block;
+	height: 0;
+	clear: both
+}
+.clearfix {
+	zoom: 1
+}
+
+.pass-forceverify-wrapper {
+	height: auto;
+	width: 455px;
+	position: absolute;
+	z-index: 1020;
+	color: #333;
+	line-height: 18px;
+	font-family: Arial, "宋体"
+}
+
+.pass-forceverify-wrapper h3 {
+	margin: 0
+}
+
+.pass-forceverify-wrapper p {
+	margin: 0
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-input-error
+	{
+	border: 1px solid #da1111
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-input-focus
+	{
+	border: 1px solid #377bcb
+}
+
+.pass-forceverify-wrapper .forceverify-header {
+	background-color: #FCFCFC;
+	border: 1px solid #CCC;
+	border-width: 1px 1px 0 1px;
+	border-bottom: 0
+}
+
+.pass-forceverify-wrapper .forceverify-header-h3 {
+	margin: 0;
+	width: auto;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	font-family: "宋体";
+	font-weight: bold;
+	color: #333;
+	text-indent: 20px;
+	margin-right: 29px;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: left;
+	cursor: move
+}
+
+.pass-forceverify-wrapper .forceverify-header-h3:hover {
+	cursor: move
+}
+
+.pass-forceverify-wrapper .forceverify-header-a {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 14px;
+	height: 13px;
+	outline: none;
+	display: block;
+	background-image: url(../img/uni/bd_split_df07cd3b.gif);
+	background-position: -281px -41px;
+	background-repeat: no-repeat;
+	cursor: pointer
+}
+
+.pass-forceverify-wrapper .forceverify-header-a:hover {
+	background-position: -281px -81px
+}
+
+.pass-forceverify-wrapper .forceverify-article {
+	position: relative;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	border-width: 0 1px 1px 1px
+}
+
+.pass-forceverify-wrapper .forceverify-article .pass-forceverify-content
+	{
+	border-top: 1px solid #F2F2F2;
+	padding: 20px;
+	color: #333
+}
+
+.pass-forceverify-wrapper .pass-forceverify-content .content-element {
+	margin-bottom: 15px
+}
+
+.pass-forceverify-wrapper .pass-forceverify-content .content-msg {
+	height:
+}
+
+.pass-forceverify-wrapper .pass-forceverify-content .content-msg .content-msgtext
+	{
+	font-size: 12px;
+	color: #666
+}
+
+.pass-forceverify-wrapper .pass-forceverify-content .content-type {
+	position: relative;
+	z-index: 101
+}
+
+.pass-forceverify-wrapper .pass-forceverify-content .content-type .content-type-title
+	{
+	font-size: 14px;
+	width: 58px;
+	padding-right: 10px;
+	line-height: 32px;
+	float: left;
+	text-align: right;
+	font-weight: normal
+}
+
+.pass-forceverify-wrapper .pass-forceverify-content .content-type-select
+	{
+	border: 1px solid #CCC;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	font-size: 12px;
+	background: url(../img/account_thaw/form_input_261_95a6f436.png)
+		no-repeat left top;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .3s;
+	-moz-transition-property: all;
+	-moz-transition-duration: .3s;
+	-o-transition-property: all;
+	-o-transition-duration: .3s;
+	transition-property: all;
+	transition-duration: .3s;
+	float: left;
+	cursor: pointer;
+	position: relative;
+	margin-right: 10px
+}
+
+.pass-forceverify-wrapper .pass-forceverify-content .content-type-select .select-show
+	{
+	font-size: 14px;
+	width: 58px;
+	padding-right: 10px;
+	line-height: 32px;
+	float: left;
+	position: relative;
+	padding: 0 45px 0 10px;
+	line-height: 30px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	width: 206px;
+	display: inline-block;
+	white-space: nowrap;
+	color: #454545
+}
+
+.pass-forceverify-wrapper .pass-forceverify-content .content-type-select .select-show .select-show-arrow
+	{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	background: url(../img/account_thaw/button_baba8413.png) no-repeat 0
+		-90px;
+	width: 39px;
+	height: 30px;
+	border-left: 1px solid #ededed
+}
+
+.pass-forceverify-wrapper .pass-forceverify-content .content-type-select .select-show .select-show-arrow-up
+	{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	background: url(../img/account_thaw/button_baba8413.png) no-repeat -52px
+		-125px;
+	width: 39px;
+	height: 30px;
+	border-left: 1px solid #ededed
+}
+
+.pass-forceverify-wrapper .pass-forceverify-content .content-type-select-hover
+	{
+	border-color: #ababab #ccc #ccc #ababab
+}
+
+.pass-forceverify-wrapper .pass-forceverify-content .content-type-select-hover .select-show .select-show-arrow
+	{
+	background-position: -50px -90px
+}
+
+.pass-forceverify-wrapper .pass-forceverify-content .content-type-select .select-handler
+	{
+	display: none;
+	background: #fff;
+	position: absolute;
+	top: 31px;
+	left: -1px;
+	width: 261px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 100;
+	border: solid #c7c7c7;
+	border-width: 0 1px 1px 1px;
+	max-height: 300px;
+	margin: 0;
+	padding: 0
+}
+
+.pass-forceverify-wrapper .select-handler .select-list {
+	margin: 0;
+	list-style: none
+}
+
+.pass-forceverify-wrapper .select-handler .select-item {
+	padding: 0 25px 0 10px;
+	line-height: 28px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	display: inline-block;
+	width: 226px;
+	white-space: nowrap;
+	color: #666;
+	text-decoration: none;
+	background: #f7f7f7
+}
+
+.pass-forceverify-wrapper .select-handler .select-item:hover {
+	background: #d6d6d6
+}
+
+.pass-forceverify-wrapper .pass-forceverify-content .content-send,.pass-forceverify-wrapper .pass-forceverify-content .content-vcode,.pass-forceverify-wrapper .pass-forceverify-content .content-password,.pass-forceverify-wrapper .pass-forceverify-content .content-submit
+	{
+	padding-left: 68px;
+	position: relative
+}
+
+.pass-forceverify-wrapper .pass-forceverify-content .content-submit {
+	margin-bottom: 30px
+}
+
+.pass-forceverify-wrapper .pass-forceverify-content .content-footer {
+	border-top: 1px dashed #dfdfdf;
+	padding-top: 15px;
+	font-size: 12px
+}
+
+.pass-forceverify-wrapper .forceverify-button-send {
+	width: 107px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	text-align: center;
+	background: url(../img/account_thaw/button_baba8413.png) no-repeat 0 0;
+	cursor: pointer;
+	border: none;
+	color: #333
+}
+
+.pass-forceverify-wrapper .forceverify-button-sent {
+	border: 1px solid #cacaca;
+	background: #e9e9e9;
+	color: #a7a7a7;
+	cursor: default
+}
+
+.pass-forceverify-wrapper .forceverify-input-vcode,.pass-forceverify-wrapper .forceverify-input-password
+	{
+	border: 1px solid #CCC;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	background-color: white;
+	vertical-align: middle;
+	font-size: 12px;
+	_margin-top: 1px;
+	padding: 7px 0 7px 8px;
+	height: 16px;
+	line-height: 16px;
+	overflow: hidden;
+	color: #333;
+	font-size: 14px;
+	background: url(../img/account_thaw/form_input_261_95a6f436.png)
+		no-repeat left top;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .3s;
+	-moz-transition-property: all;
+	-moz-transition-duration: .3s;
+	-o-transition-property: all;
+	-o-transition-duration: .3s;
+	transition-property: all;
+	transition-duration: .3s;
+	outline: none;
+	resize: none;
+	width: 97px;
+	float: left;
+	-ms-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box
+}
+
+.pass-forceverify-wrapper .forceverify-input-password {
+	width: 138px
+}
+
+.pass-forceverify-wrapper .content-vcode .forceverify-input-label,.pass-forceverify-wrapper .content-password .forceverify-input-label
+	{
+	position: absolute;
+	left: 68px;
+	top: 3px;
+	_top: 5px;
+	color: #ccc;
+	height: 28px;
+	line-height: 28px;
+	cursor: text;
+	-webkit-transition-property: color;
+	-webkit-transition-duration: .3s;
+	-moz-transition-property: all;
+	-moz-transition-duration: .3s;
+	-o-transition-property: all;
+	-o-transition-duration: .3s;
+	transition-property: all;
+	transition-duration: .3s;
+	font-size: 12px;
+	font-weight: normal;
+	padding-left: 10px;
+	width: 95px
+}
+
+.pass-forceverify-wrapper .content-password .forceverify-input-label {
+	width: 250px
+}
+
+.pass-forceverify-wrapper .forceverify-button-submit {
+	width: 109px;
+	height: 34px;
+	line-height: 34px;
+	float: left;
+	text-align: center;
+	background: url(../img/uni/bd_split_df07cd3b.gif) no-repeat 0 0;
+	cursor: pointer;
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none;
+	border: none
+}
+
+.pass-forceverify-wrapper .forceverify-button-hover {
+	background-position: -120px 0
+}
+
+.pass-forceverify-wrapper .forceverify-button-press {
+	background-position: -240px 0
+}
+
+.pass-forceverify-wrapper  .pass-forceverify-content .content-element .forceverify-error,.pass-forceverify-wrapper  .pass-forceverify-content .content-element .content-error-send
+	{
+	line-height: 30px;
+	float: left;
+	color: #da1111;
+	margin-left: 10px;
+	font-size: 12px;
+	display: block;
+	float: left;
+	height: 30px
+}
+
+.pass-forceverify-wrapper .pass-forceverify-content .content-element .content-error-send
+	{
+	line-height: 30px;
+	float: left;
+	color: #da1111;
+	margin-left: 10px;
+	font-size: 12px;
+	display: block;
+	float: left;
+	height: 30px
+}
+
+.passport-forceverify-risk-msg {
+	padding-top: 75px;
+	line-height: 24px;
+	margin-bottom: 30px;
+	font-size: 14px;
+	text-align: center
+}
+
+.passport-forceverify-risk-con {
+	margin-left: 115px;
+	margin-bottom: 150px;
+	margin-top: 30px
+}
+
+.passport-forceverify-risk-btn {
+	width: 109px;
+	height: 34px;
+	line-height: 34px;
+	float: left;
+	text-align: center;
+	background: url(../img/uni/bd_split_df07cd3b.gif) no-repeat 0 0;
+	cursor: pointer;
+	color: #fff;
+	font-size: 14px;
+	text-decoration: none
+}
+
+a.passport-forceverify-risk-btn:hover {
+	color: #fff
+}
+
+.passport-forceverify-risk-next {
+	font-size: 14px;
+	float: left;
+	line-height: 34px;
+	text-decoration: underline;
+	display: inline;
+	margin-left: 20px
+}
+
+.pass-forceverify-content .content-app {
+	margin-left: 68px;
+	margin-right: 82px;
+	position: relative
+}
+
+.content-app .app-select {
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #d5d5d5
+}
+
+.content-app .app-select-list {
+	display: block;
+	width: 80px;
+	height: 30px;
+	margin: 0 3px;
+	line-height: 30px;
+	float: left;
+	font-size: 12px;
+	color: #333;
+	cursor: pointer;
+	text-align: center
+}
+
+.content-app.softtoken .app-softtoken,.content-app.qrcode .app-qrcode,.content-app.fast .app-fast
+	{
+	font-weight: bold;
+	cursor: default
+}
+
+.content-app .app-select-bottom {
+	width: 80px;
+	display: block;
+	position: absolute;
+	height: 2px;
+	background: #4B97E5;
+	top: 30px;
+	left: 0;
+	transition: .3s;
+	-moz-transition: .3s;
+	-o-transition: .3s;
+	-webkit-transition: .3s
+}
+
+.content-app .app-select-bottom .list-bottom-arrow {
+	position: absolute;
+	height: 0;
+	width: 0;
+	display: block;
+	border: 3px solid #4B97E5;
+	border-top: none;
+	border-left-color: #fff;
+	border-right-color: #fff;
+	top: -3px;
+	left: 38px;
+	_display: none
+}
+
+.content-app.softtoken .app-select-bottom {
+	left: 0
+}
+
+.content-app.qrcode .app-select-bottom {
+	left: 89px
+}
+
+.content-app.fast .app-select-bottom {
+	left: 175px
+}
+
+.content-app .app-detail {
+	overflow: hidden;
+	position: relative;
+	width: 100%
+}
+
+.content-app .app-detail-wrapper {
+	position: relative;
+	width: 790px;
+	transition: .3s;
+	-moz-transition: .3s;
+	-o-transition: .3s;
+	-webkit-transition: .3s
+}
+
+.content-app.softtoken .app-detail-wrapper {
+	left: 0
+}
+
+.content-app.qrcode .app-detail-wrapper {
+	left: -263px
+}
+
+.content-app.fast .app-detail-wrapper {
+	left: -526px
+}
+
+.content-app .app-detail .app-detail-list {
+	float: left;
+	width: 263px
+}
+
+.content-app .app-detail .app-detail-list .forceverify-input-vcode,.content-app .app-detail .app-detail-list .forceverify-input-password,.content-app .app-detail .app-detail-list .forceverify-button-submit
+	{
+	clear: left;
+	margin-top: 15px
+}
+
+.content-app .app-detail .forceverify-input-label {
+	position: absolute;
+	left: 0;
+	top: 68px;
+	color: #ccc;
+	height: 28px;
+	line-height: 28px;
+	cursor: text;
+	-webkit-transition-property: color;
+	-webkit-transition-duration: .3s;
+	-moz-transition-property: all;
+	-moz-transition-duration: .3s;
+	-o-transition-property: all;
+	-o-transition-duration: .3s;
+	transition-property: all;
+	transition-duration: .3s;
+	font-size: 12px;
+	padding-left: 10px;
+	width: 95px
+}
+
+.content-app .app-detail .app-detail-qrcode {
+	text-align: center
+}
+
+.content-app .app-detail .app-detail-qrcode .app-qrcode-img {
+	margin-top: 15px;
+	height: 120px;
+	width: 120px;
+	padding: 9px;
+	border: 1px solid #dfdfdf;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background: #fcfcfc;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#FCFCFC),
+		to(#f7f7f7) );
+	background: -moz-gradient(linear, 0 0, 0 100%, from(#FCFCFC),
+		to(#f7f7f7) );
+	background: -ms-gradient(linear, 0 0, 0 100%, from(#FCFCFC), to(#f7f7f7)
+		);
+	background: gradient(linear, 0 0, 0 100%, from(#FCFCFC), to(#f7f7f7) )
+}
+
+.content-app .content-error-softtoken {
+	margin-top: 15px
+}
+
+.content-app .app-detail-msg {
+	font-size: 12px;
+	color: #999;
+	margin-top: 15px;
+	line-height: 18px
+}
+
+.pass-forceverify-wrapper .forceverify-article .app-fail {
+	display: none;
+	position: absolute;
+	width: 300px;
+	height: 30px;
+	border: none;
+	top: 0;
+	left: 0;
+	_left: -10px;
+	cursor: default;
+	z-index: 65535;
+	background: #fff;
+	padding-top: 130px;
+	padding-bottom: 130px;
+	_padding-bottom: 140px;
+	padding-left: 140px
+}
+
+.pass-forceverify-wrapper .forceverify-article .app-fail .app-fail-icon
+	{
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	background: url(../img/uni/warning_e6141030.png) no-repeat
+}
+
+.pass-forceverify-wrapper .forceverify-article .app-fail .app-fail-msg {
+	position: relative;
+	color: #666;
+	top: -10px;
+	margin-left: 10px
+}
+
+.content-app .app-detail-msg-fast {
+	color: #666
+}
+
+.passport-forceverify-usernamelogin {
+	padding: 20px
+}
+
+.passport-forceverify-usernamelogin-msg-title {
+	font-size: 12px;
+	font-weight: bold;
+	color: #666;
+	line-height: 24px
+}
+
+.passport-forceverify-usernamelogin-msg-con {
+	text-indent: 2em;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666;
+	line-height: 24px
+}
+
+.passport-forceverify-usernamelogin-btnwrapper {
+	height: 27px;
+	width: 175px;
+	background: #fff;
+	border: 1px solid #cacaca;
+	margin: 40px auto 0
+}
+
+.passport-forceverify-usernamelogin-btn {
+	display: block;
+	height: 12px;
+	width: 174px;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	background: #eaeaea;
+	padding-top: 5px;
+	padding-bottom: 9px;
+	_padding-bottom: 5px;
+	color: #333;
+	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	transition: .3s;
+	-moz-transition: .3s;
+	-o-transition: .3s;
+	-webkit-transition: .3s
+}
+
+.passport-forceverify-usernamelogin-btn:hover {
+	background: #e0e0e0;
+	color: #000
+}
+
+.passport-forceverify-usernamelogin-btnmsg,.passport-forceverify-usernamelogin-btnlink
+	{
+	padding-top: 10px;
+	text-align: center;
+	color: #00c;
+	text-decoration: underline
+}
+
+.passport-forceverify-usernamelogin-footer {
+	position: relative;
+	margin-top: 40px;
+	border-top: 1px dashed #dfdfdf;
+	height: 30px
+}
+
+.passport-forceverify-usernamelogin-title {
+	font-size: 12px;
+	padding-top: 18px;
+	color: #666
+}
+
+.passport-forceverify-usernamelogin-detial {
+	padding-left: 2em;
+	line-height: 24px;
+	font-size: 12px;
+	margin-top: 20px;
+	color: #666
+}
+
+.passport-forceverify-usernamelogin-feedback {
+	position: absolute;
+	top: 18px;
+	right: 0;
+	_top: 20px;
+	font-size: 12px;
+	color: #00c
+}
+
+.passport-forceverify-usernamelogin-success {
+	display: none;
+	position: absolute;
+	padding-top: 90px;
+	height: 160px;
+	width: 450px;
+	top: 0;
+	left: 0;
+	_left: -20px;
+	background: #fff
+}
+
+.passport-forceverify-usernamelogin-successtitle,.passport-forceverify-usernamelogin-successmsg
+	{
+	line-height: 24px;
+	font-size: 12px;
+	color: #666;
+	text-align: center
+}
+
+.passport-forceverify-usernamelogin-successtitle em {
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	background: url(../img/uni/bd_split_df07cd3b.gif) no-repeat -120px
+		-117px
+}
+
+.passport-forceverify-usernamelogin-successtitle a {
+	position: relative;
+	top: -8px;
+	left: 10px;
+	font-size: 12px;
+	color: #666;
+	text-decoration: none
+}
+
+.passport-forceverify-usernamelogin-successtitle a:hover {
+	position: relative;
+	top: -8px;
+	left: 10px;
+	font-size: 12px;
+	color: #666;
+	text-decoration: none
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-upsms {
+	
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-upsms .content-error-send
+	{
+	color: #da1111
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-upsms table
+	{
+	border: 1px solid #999;
+	width: 410px;
+	height: 140px
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-upsms table tr
+	{
+	margin: 2px
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-upsms table td
+	{
+	padding-left: 5px
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-upsms .upsms-msg
+	{
+	font-size: 12px;
+	margin-bottom: 12px
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-upsms .upsms-qrcode
+	{
+	width: 160px;
+	height: 95px
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-upsms .upsms-qrcode img
+	{
+	width: 95px;
+	height: 95px
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-upsms .upsms-footer
+	{
+	color: #999;
+	font-size: 12px
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-upsms .upsms-footer .right
+	{
+	float: right
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-upsms .rowname
+	{
+	text-align: right;
+	width: 60px
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-upsms .rowvalue
+	{
+	text-align: left;
+	width: 150px
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-upsms .fillrow
+	{
+	display: table-row;
+	height: 55px
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-upsms .content-error-send
+	{
+	float: left;
+	line-height: 50px
+}
+
+.pass-forceverify-wrapper .forceverify-article .forceverify-upsms .upsms-back
+	{
+	float: right;
+	margin: 8px
+}
+
+.content-app .app-detail .app-detail-qrcode .app-qrcode-img {
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box
+}

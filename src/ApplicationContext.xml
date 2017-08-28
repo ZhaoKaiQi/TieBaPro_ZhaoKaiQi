@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 添加命名空间 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+	    http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+        <!-- 创建实体 -->
+<bean id="userDao" class="com.qf.dao.impl.UserDao" p:sessionFactory-ref="sessionFactory"></bean>
+<bean id="userService" class="com.qf.service.impl.UserService" p:userDao-ref="userDao"></bean>
+<bean id="messageDao" class="com.qf.dao.impl.MessageDao" p:sessionFactory-ref="sessionFactory"></bean>
+<bean id="messageService" class="com.qf.service.impl.MessageService" p:messageDao-ref="messageDao"></bean>
+<bean id="pictureDao" class="com.qf.dao.impl.PictureDao" p:sessionFactory-ref="sessionFactory"></bean>
+<bean id="pictureService" class="com.qf.service.impl.PictureService" p:pictureDao-ref="pictureDao"></bean>
+<!-- 数据库连接池 -->
+<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+<property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+<property name="jdbcUrl" value="jdbc:mysql:///TieBa"></property>
+<property name="user" value="root"></property>
+<property name="password" value="123456"></property>
+<property name="acquireIncrement" value="2"></property>
+<property name="maxPoolSize" value="100"></property>
+<property name="initialPoolSize" value="2"></property>
+<property name="maxStatements" value="100"></property>
+</bean>
+<!-- 配置工厂管理hibernate -->
+<!-- 配置sessionFactory -->
+<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+<!-- <property name="configLocation" value="classpath:hibernate.cfg.xml"></property> -->
+<property name="dataSource" ref="dataSource"></property>
+<!--开始Hibernate的配置 -->
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+			</props>
+		</property>
+		<!--配置对象的映射的文件 -->
+		<property name="mappingDirectoryLocations">
+			<list>
+				<value>classpath:com/qf/entity</value>
+			</list>
+		</property>
+</bean>
+<!-- 下面开始配置事务 -->
+<bean id="txManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+<property name="dataSource" ref="dataSource"></property>
+<property name="sessionFactory" ref="sessionFactory"></property>
+</bean>
+
+<!-- 事务增强 -->
+<tx:advice id="txAdvice" transaction-manager="txManager">
+<tx:attributes>
+<tx:method name="*" read-only="false"/>
+</tx:attributes>
+</tx:advice>
+<!-- 配置Aop -->
+<aop:config>
+<aop:pointcut expression="execution(* com.qf.service.impl.*.*(..))" id="pt"/>
+<aop:advisor advice-ref="txAdvice" pointcut-ref="pt"/>
+</aop:config>
+</beans>

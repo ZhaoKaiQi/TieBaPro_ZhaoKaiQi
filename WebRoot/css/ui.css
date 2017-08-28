@@ -1,0 +1,956 @@
+@CHARSET "UTF-8";
+.mod-dialog-mask {
+	position: fixed;
+	_position: absolute;
+	z-index: 1000;
+	height: 100%;
+	width: 100%;
+	top: 0
+}
+body {
+	_height: 100%
+}
+
+.dialog-mask {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	_height: 120%;
+	width: 100%;
+	background-color: #000;
+	opacity: .4;
+	filter: alpha(opacity =   40)
+}
+
+.dialog-mask-content {
+	position: absolute;
+	top: 50%;
+	left: 50%
+}
+
+.mod-confirm {
+	background-color: #fff;
+	position: absolute;
+	z-index: 100
+}
+
+.tang-dialog {
+	position: absolute
+}
+
+.tang-dialog .tang-title {
+	background-color: #FCFCFC;
+	border: 1px solid #CCC;
+	border-width: 1px 1px 0 1px;
+	border-bottom: 0
+}
+
+.tang-dialog .tang-title-dragable {
+	cursor: move
+}
+
+.tang-dialog .tang-title .buttons {
+	width: 14px;
+	height: 13px;
+	position: absolute;
+	right: 10px;
+	top: 11px
+}
+
+.tang-dialog .tang-title .buttons a {
+	width: 14px;
+	height: 13px;
+	outline: none;
+	display: block;
+	background: url('/static/passpc-base/img/ui/close.png?v=c2035f1c.png')
+		no-repeat 0 0
+}
+
+.tang-dialog .tang-title a.close-btn {
+	background-position: 0 0
+}
+
+.tang-dialog .tang-title a.close-btn:hover {
+	background-position: 0 -40px
+}
+
+.tang-dialog .tang-title span {
+	width: auto;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	font-family: "瀹嬩綋";
+	font-weight: bold;
+	color: #333;
+	text-indent: 20px;
+	margin-right: 29px;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: left
+}
+
+.tang-dialog .tang-body {
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	border-width: 0 1px 1px 1px
+}
+
+.tang-dialog .tang-body .tang-content {
+	padding: 10px;
+	border-top: 1px solid #F2F2F2
+}
+
+.tang-dialog .tang-body .contentFrame {
+	padding: 0
+}
+
+.tang-dialog .tang-body .contentFrame iframe {
+	border: 0;
+	width: 100%;
+	height: 100%
+}
+
+.tang-dialog .tang-body {
+	position: relative;
+	overflow: hidden
+}
+
+.tang-mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #FFF;
+	opacity: 0;
+	filter: alpha(opacity =   0)
+}
+
+.pass-input-container {
+	position: relative
+}
+
+.pass-input {
+	border: 1px solid #CCC;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	background-color: white;
+	vertical-align: middle;
+	font-size: 12px;
+	_margin-top: 1px;
+	padding: 7px 0 7px 8px;
+	height: 16px;
+	line-height: 16px;
+	overflow: hidden;
+	color: #333;
+	font-size: 14px;
+	background:
+		url(/static/passpc-base/img/ui/form_input_261.png?v=95a6f436.png)
+		no-repeat left top;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .3s;
+	-moz-transition-property: all;
+	-moz-transition-duration: .3s;
+	-o-transition-property: all;
+	-o-transition-duration: .3s;
+	transition-property: all;
+	transition-duration: .3s;
+	outline: none;
+	resize: none;
+	width: 253px;
+	float: left
+}
+
+textarea.pass-input {
+	line-height: 18px;
+	color: #666;
+	height: 168px;
+	padding: 7px 0 7px 8px;
+	_padding: 9px 0 7px 8px;
+	overflow: auto;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .3s;
+	-moz-transition-property: all;
+	-moz-transition-duration: .3s;
+	-o-transition-property: all;
+	-o-transition-duration: .3s;
+	transition-property: all;
+	transition-duration: .3s
+}
+
+.pass-input-hover {
+	border-color: #ababab #ccc #cccccc #ababab
+}
+
+.pass-input-warning {
+	border: 1px solid #da1111
+}
+
+.pass-input-error {
+	border: 1px solid #da1111
+}
+
+.pass-input-focus {
+	border-color: #377bcb
+}
+
+.pass-input-label {
+	position: absolute;
+	left: 13px;
+	top: 3px;
+	_top: 5px;
+	color: #ccc;
+	height: 28px;
+	line-height: 28px;
+	cursor: text;
+	-webkit-transition-property: color;
+	-webkit-transition-duration: .3s;
+	-moz-transition-property: all;
+	-moz-transition-duration: .3s;
+	-o-transition-property: all;
+	-o-transition-duration: .3s;
+	transition-property: all;
+	transition-duration: .3s
+}
+
+.pass-input-label-hover {
+	color: #ababab
+}
+
+.pass-input-label-focus {
+	color: #ccc
+}
+
+.pass-input-title {
+	font-size: 14px;
+	width: 70px;
+	padding-right: 10px;
+	line-height: 32px;
+	float: left;
+	text-align: right
+}
+
+.pass-input-msg {
+	line-height: 32px;
+	float: left;
+	color: #da1111;
+	margin-left: 10px;
+	font-size: 12px
+}
+
+.pass-input-check-success {
+	display: none;
+	float: left;
+	height: 32px;
+	width: 25px;
+	line-height: 32px;
+	margin-left: 15px;
+	background: url(/img/topbarnav_bg.png?v=84837544.png) repeat-x 0 -10px
+}
+
+.pass-button-submit,.pass-button-timer2,.mod-btn1 {
+	height: 34px;
+	width: 109px;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	border: 0;
+	background:
+		url(/static/passpc-base/img/ui/button_icon.png?v=73b03d37.png)
+		no-repeat 0 0;
+	line-height: 32px
+}
+
+.pass-button-submit-hover,.mod-btn1:hover {
+	background:
+		url(/static/passpc-base/img/ui/button_icon.png?v=73b03d37.png)
+		no-repeat 0 -35px
+}
+
+.pass-button-submit-press {
+	background:
+		url(/static/passpc-base/img/ui/button_icon.png?v=73b03d37.png)
+		no-repeat 0 -70px
+}
+
+.pass-button-timer,.mod-btn2 {
+	height: 29px;
+	width: 107px;
+	color: #333;
+	cursor: pointer;
+	border: 0;
+	line-height: 29px;
+	text-align: center;
+	background:
+		url(/static/passpc-base/img/ui/button_icon.png?v=73b03d37.png)
+		no-repeat 0 -138px;
+	float: left
+}
+
+.pass-button-timer-hover,.mod-btn2:hover {
+	background:
+		url(/static/passpc-base/img/ui/button_icon.png?v=73b03d37.png)
+		no-repeat 0 -168px
+}
+
+.pass-button-timer-press {
+	background:
+		url(/static/passpc-base/img/ui/button_icon.png?v=73b03d37.png)
+		no-repeat 0 198px
+}
+
+.pass-button-timer-timing {
+	color: #a7a7a7;
+	background:
+		url(/static/passpc-base/img/ui/button_icon.png?v=73b03d37.png)
+		no-repeat 0 -198px
+}
+
+.pass-button-timer2 {
+	float: left
+}
+
+.pass-button-timer2-timing {
+	color: #a7a7a7;
+	background:
+		url(/static/passpc-base/img/ui/button_icon.png?v=73b03d37.png)
+		no-repeat 0 -105px;
+	height: 32px
+}
+
+.pass-button-timer2-timing .button-left {
+	background: url(/static/passpc-base/img/ui/button_bg.png?v=6458dc87.png)
+		no-repeat 0 -305px
+}
+
+.pass-button-timer2-timing .button-body {
+	background: url(/static/passpc-base/img/ui/button_bg.png?v=6458dc87.png)
+		repeat-x 0 -337px
+}
+
+.pass-button-timer2-timing .button-right {
+	width: 1px;
+	background: url(/static/passpc-base/img/ui/button_bg.png?v=6458dc87.png)
+		repeat-x 0 -369px
+}
+
+.pass-button-submit2 {
+	height: 30px;
+	width: 105px;
+	border: 1px solid #4388cd;
+	color: #fff;
+	text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.2);
+	background: #4892dc;
+	background: -moz-linear-gradient(top, #4c99e7 0, #4892dc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4c99e7),
+		color-stop(100%, #4892dc) );
+	background: -webkit-linear-gradient(top, #4c99e7 0, #4892dc 100%);
+	background: -o-linear-gradient(top, #4c99e7 0, #4892dc 100%);
+	background: -ms-linear-gradient(top, #4c99e7 0, #4892dc 100%);
+	background: linear-gradient(to bottom, #4c99e7 0, #4892dc 100%);
+	box-shadow: inset 1px 1px 3px rbga(0, 0, 0, 0.18);
+	-moz-box-shadow: inset 1px 1px 3px rbga(0, 0, 0, 0.18);
+	-webkit-box-shadow: inset 1px 1px 3px rbga(0, 0, 0, 0.18);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.18)
+}
+
+.pass-select {
+	border: 1px solid #CCC;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	font-size: 12px;
+	background:
+		url(/static/passpc-base/img/ui/form_input_261.png?v=95a6f436.png)
+		no-repeat left top;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .3s;
+	-moz-transition-property: all;
+	-moz-transition-duration: .3s;
+	-o-transition-property: all;
+	-o-transition-duration: .3s;
+	transition-property: all;
+	transition-duration: .3s;
+	float: left;
+	cursor: pointer;
+	position: relative;
+	margin-right: 10px
+}
+
+.pass-select-local,.pass-select-date {
+	position: relative;
+	z-index: 1
+}
+
+.zindex-2 {
+	z-index: 2
+}
+
+.pass-select-content {
+	padding: 0 45px 0 10px;
+	line-height: 30px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	min-width: 105px;
+	_width: 105px;
+	display: inline-block;
+	white-space: nowrap;
+	color: #454545
+}
+
+.pass-select-handler {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background:
+		url(/static/passpc-base/img/ui/form_select_normal.png?v=65d57b79.png)
+		no-repeat 50% 50%;
+	width: 39px;
+	height: 30px;
+	border-left: 1px solid #ededed
+}
+
+.pass-select-hover {
+	border-color: #ababab #ccc #cccccc #ababab
+}
+
+.pass-select-hover .pass-select-handler {
+	background:
+		url(/static/passpc-base/img/ui/form_select_hover.png?v=88bad1a7.png)
+		no-repeat 50% 50%
+}
+
+.pass-select-error {
+	border: 1px solid #da1111
+}
+
+.pass-select-focus {
+	border-color: #377bcb
+}
+
+.pass-select-list {
+	display: none;
+	background: #fff;
+	position: absolute;
+	top: 31px;
+	left: -1px;
+	width: 100%;
+	_width: 160px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 100;
+	border: solid #c7c7c7;
+	border-width: 0 1px 1px 1px;
+	max-height: 300px
+}
+
+.pass-select-list a {
+	padding: 0 25px 0 10px;
+	line-height: 28px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	display: inline-block;
+	width: 100%;
+	white-space: nowrap
+}
+
+.pass-select-list a,.pass-select-list a:link,.pass-select-list a:visited,.pass-select-list a:hover,.pass-select-list a:active
+	{
+	color: #666
+}
+
+.pass-select-list a:hover,.pass-select-list-sel {
+	background: #f7f7f7
+}
+
+.pass-select-msg {
+	line-height: 32px;
+	float: left;
+	color: #da1111;
+	font-size: 12px
+}
+
+.cus-sel-ie6-maxheight {
+	height: 300px
+}
+
+.mod-dialog-mask {
+	position: fixed;
+	_position: absolute;
+	z-index: 1000;
+	height: 100%;
+	width: 100%;
+	top: 0
+}
+
+body {
+	_height: 100%
+}
+
+.dialog-mask {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	_height: 120%;
+	width: 100%;
+	background-color: #000;
+	opacity: .4;
+	filter: alpha(opacity = 40)
+}
+
+.dialog-mask-content {
+	position: absolute;
+	top: 50%;
+	left: 50%
+}
+
+.mod-confirm {
+	background-color: #fff;
+	position: absolute;
+	z-index: 100
+}
+
+.tang-dialog {
+	position: absolute
+}
+
+.tang-dialog .tang-title {
+	background-color: #FCFCFC;
+	border: 1px solid #CCC;
+	border-width: 1px 1px 0 1px;
+	border-bottom: 0
+}
+
+.tang-dialog .tang-title-dragable {
+	cursor: move
+}
+
+.tang-dialog .tang-title .buttons {
+	width: 14px;
+	height: 13px;
+	position: absolute;
+	right: 10px;
+	top: 11px
+}
+
+.tang-dialog .tang-title .buttons a {
+	width: 14px;
+	height: 13px;
+	outline: none;
+	display: block;
+	background: url('/static/passpc-base/img/ui/close.png?v=c2035f1c.png')
+		no-repeat 0 0
+}
+
+.tang-dialog .tang-title a.close-btn {
+	background-position: 0 0
+}
+
+.tang-dialog .tang-title a.close-btn:hover {
+	background-position: 0 -40px
+}
+
+.tang-dialog .tang-title span {
+	width: auto;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	font-family: "宋体";
+	font-weight: bold;
+	color: #333;
+	text-indent: 20px;
+	margin-right: 29px;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: left
+}
+
+.tang-dialog .tang-body {
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	border-width: 0 1px 1px 1px
+}
+
+.tang-dialog .tang-body .tang-content {
+	padding: 10px;
+	border-top: 1px solid #F2F2F2
+}
+
+.tang-dialog .tang-body .contentFrame {
+	padding: 0
+}
+
+.tang-dialog .tang-body .contentFrame iframe {
+	border: 0;
+	width: 100%;
+	height: 100%
+}
+
+.tang-dialog .tang-body {
+	position: relative;
+	overflow: hidden
+}
+
+.tang-mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #FFF;
+	opacity: 0;
+	filter: alpha(opacity = 0)
+}
+
+.pass-input-container {
+	position: relative
+}
+
+.pass-input {
+	border-radius:5px;
+	border: 1px solid #CCC;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	background-color: white;
+	vertical-align: middle;
+	font-size: 12px;
+	_margin-top: 1px;
+	padding: 7px 0 7px 8px;
+	height: 16px;
+	line-height: 16px;
+	overflow: hidden;
+	color: #333;
+	font-size: 14px;
+	background:
+		url(/static/passpc-base/img/ui/form_input_261.png?v=95a6f436.png)
+		no-repeat left top;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .3s;
+	-moz-transition-property: all;
+	-moz-transition-duration: .3s;
+	-o-transition-property: all;
+	-o-transition-duration: .3s;
+	transition-property: all;
+	transition-duration: .3s;
+	outline: none;
+	resize: none;
+	width: 253px;
+	float: left
+}
+
+textarea.pass-input {
+	line-height: 18px;
+	color: #666;
+	height: 168px;
+	padding: 7px 0 7px 8px;
+	_padding: 9px 0 7px 8px;
+	overflow: auto;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .3s;
+	-moz-transition-property: all;
+	-moz-transition-duration: .3s;
+	-o-transition-property: all;
+	-o-transition-duration: .3s;
+	transition-property: all;
+	transition-duration: .3s
+}
+
+.pass-input-hover {
+	border-color: #ababab #ccc #cccccc #ababab
+}
+
+.pass-input-warning {
+	border: 1px solid #da1111
+}
+
+.pass-input-error {
+	border: 1px solid #da1111
+}
+
+.pass-input-focus {
+	border-color: #377bcb
+}
+
+.pass-input-label {
+	position: absolute;
+	left: 13px;
+	top: 3px;
+	_top: 5px;
+	color: #ccc;
+	height: 28px;
+	line-height: 28px;
+	cursor: text;
+	-webkit-transition-property: color;
+	-webkit-transition-duration: .3s;
+	-moz-transition-property: all;
+	-moz-transition-duration: .3s;
+	-o-transition-property: all;
+	-o-transition-duration: .3s;
+	transition-property: all;
+	transition-duration: .3s
+}
+
+.pass-input-label-hover {
+	color: #ababab
+}
+
+.pass-input-label-focus {
+	color: #ccc
+}
+
+.pass-input-title {
+	font-size: 14px;
+	width: 70px;
+	padding-right: 10px;
+	line-height: 32px;
+	float: left;
+	text-align: right
+}
+
+.pass-input-msg {
+	line-height: 32px;
+	float: left;
+	color: #da1111;
+	margin-left: 10px;
+	font-size: 12px
+}
+
+.pass-input-check-success {
+	display: none;
+	float: left;
+	height: 32px;
+	width: 25px;
+	line-height: 32px;
+	margin-left: 15px;
+	background: url(/img/topbarnav_bg.png?v=84837544.png) repeat-x 0 -10px
+}
+
+.pass-button-submit,.pass-button-timer2,.mod-btn1 {
+	height: 34px;
+	width: 109px;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	border: 0;
+	background:
+		url(/static/passpc-base/img/ui/button_icon.png?v=73b03d37.png)
+		no-repeat 0 0;
+	line-height: 32px
+}
+
+.pass-button-submit-hover,.mod-btn1:hover {
+	background:
+		url(/static/passpc-base/img/ui/button_icon.png?v=73b03d37.png)
+		no-repeat 0 -35px
+}
+
+.pass-button-submit-press {
+	background:
+		url(/static/passpc-base/img/ui/button_icon.png?v=73b03d37.png)
+		no-repeat 0 -70px
+}
+
+.pass-button-timer,.mod-btn2 {
+	height: 29px;
+	width: 107px;
+	color: #333;
+	cursor: pointer;
+	border: 0;
+	line-height: 29px;
+	text-align: center;
+	background:
+		url(/static/passpc-base/img/ui/button_icon.png?v=73b03d37.png)
+		no-repeat 0 -138px;
+	float: left
+}
+
+.pass-button-timer-hover,.mod-btn2:hover {
+	background:
+		url(/static/passpc-base/img/ui/button_icon.png?v=73b03d37.png)
+		no-repeat 0 -168px
+}
+
+.pass-button-timer-press {
+	background:
+		url(/static/passpc-base/img/ui/button_icon.png?v=73b03d37.png)
+		no-repeat 0 198px
+}
+
+.pass-button-timer-timing {
+	color: #a7a7a7;
+	background:
+		url(/static/passpc-base/img/ui/button_icon.png?v=73b03d37.png)
+		no-repeat 0 -198px
+}
+
+.pass-button-timer2 {
+	float: left
+}
+
+.pass-button-timer2-timing {
+	color: #a7a7a7;
+	background:
+		url(/static/passpc-base/img/ui/button_icon.png?v=73b03d37.png)
+		no-repeat 0 -105px;
+	height: 32px
+}
+
+.pass-button-timer2-timing .button-left {
+	background: url(/static/passpc-base/img/ui/button_bg.png?v=6458dc87.png)
+		no-repeat 0 -305px
+}
+
+.pass-button-timer2-timing .button-body {
+	background: url(/static/passpc-base/img/ui/button_bg.png?v=6458dc87.png)
+		repeat-x 0 -337px
+}
+
+.pass-button-timer2-timing .button-right {
+	width: 1px;
+	background: url(/static/passpc-base/img/ui/button_bg.png?v=6458dc87.png)
+		repeat-x 0 -369px
+}
+
+.pass-button-submit2 {
+	height: 30px;
+	width: 105px;
+	border: 1px solid #4388cd;
+	color: #fff;
+	text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.2);
+	background: #4892dc;
+	background: -moz-linear-gradient(top, #4c99e7 0, #4892dc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4c99e7),
+		color-stop(100%, #4892dc) );
+	background: -webkit-linear-gradient(top, #4c99e7 0, #4892dc 100%);
+	background: -o-linear-gradient(top, #4c99e7 0, #4892dc 100%);
+	background: -ms-linear-gradient(top, #4c99e7 0, #4892dc 100%);
+	background: linear-gradient(to bottom, #4c99e7 0, #4892dc 100%);
+	box-shadow: inset 1px 1px 3px rbga(0, 0, 0, 0.18);
+	-moz-box-shadow: inset 1px 1px 3px rbga(0, 0, 0, 0.18);
+	-webkit-box-shadow: inset 1px 1px 3px rbga(0, 0, 0, 0.18);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.18)
+}
+
+.pass-select {
+	border: 1px solid #CCC;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	font-size: 12px;
+	background:
+		url(/static/passpc-base/img/ui/form_input_261.png?v=95a6f436.png)
+		no-repeat left top;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .3s;
+	-moz-transition-property: all;
+	-moz-transition-duration: .3s;
+	-o-transition-property: all;
+	-o-transition-duration: .3s;
+	transition-property: all;
+	transition-duration: .3s;
+	float: left;
+	cursor: pointer;
+	position: relative;
+	margin-right: 10px
+}
+
+.pass-select-local,.pass-select-date {
+	position: relative;
+	z-index: 1
+}
+
+.zindex-2 {
+	z-index: 2
+}
+
+.pass-select-content {
+	padding: 0 45px 0 10px;
+	line-height: 30px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	min-width: 105px;
+	_width: 105px;
+	display: inline-block;
+	white-space: nowrap;
+	color: #454545
+}
+
+.pass-select-handler {
+	position: absolute;
+	right: 0;
+	top: 0;
+	background:
+		url(/static/passpc-base/img/ui/form_select_normal.png?v=65d57b79.png)
+		no-repeat 50% 50%;
+	width: 39px;
+	height: 30px;
+	border-left: 1px solid #ededed
+}
+
+.pass-select-hover {
+	border-color: #ababab #ccc #cccccc #ababab
+}
+
+.pass-select-hover .pass-select-handler {
+	background:
+		url(/static/passpc-base/img/ui/form_select_hover.png?v=88bad1a7.png)
+		no-repeat 50% 50%
+}
+
+.pass-select-error {
+	border: 1px solid #da1111
+}
+
+.pass-select-focus {
+	border-color: #377bcb
+}
+
+.pass-select-list {
+	display: none;
+	background: #fff;
+	position: absolute;
+	top: 31px;
+	left: -1px;
+	width: 100%;
+	_width: 160px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 100;
+	border: solid #c7c7c7;
+	border-width: 0 1px 1px 1px;
+	max-height: 300px
+}
+
+.pass-select-list a {
+	padding: 0 25px 0 10px;
+	line-height: 28px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	display: inline-block;
+	width: 100%;
+	white-space: nowrap
+}
+
+.pass-select-list a,.pass-select-list a:link,.pass-select-list a:visited,.pass-select-list a:hover,.pass-select-list a:active
+	{
+	color: #666
+}
+
+.pass-select-list a:hover,.pass-select-list-sel {
+	background: #f7f7f7
+}
+
+.pass-select-msg {
+	line-height: 32px;
+	float: left;
+	color: #da1111;
+	font-size: 12px
+}
+
+.cus-sel-ie6-maxheight {
+	height: 300px
+}

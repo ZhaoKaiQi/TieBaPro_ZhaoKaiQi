@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+body{
+	font-size:12px;
+	font-family:楷体;
+	color:#666666;
+}
+/*对搜索框的设置*/
+
+.sa{
+	width:40px;
+	height:24px;
+	border:1px solid #DDDDDD;
+	text-algin:center;
+	float:left;
+/* 	background-color:pink; */
+}
+/*搜索框*/
+.sb{
+	width:160px;
+	height:22px;
+	border:1px solid #DDDDDD;
+	margin-right:0px;
+	
+}
+/*搜索标志图片设置*/
+.sc {
+	/* background:url(images/soso.jpg) no-repeat; ; */
+    border: medium none;
+    width: 76px;
+    height: 27px;
+    cursor: pointer;
+  	vertical-align:top;
+  	 margin-left:0px;
+  	 position:relative;
+  	 right:6px;
+}

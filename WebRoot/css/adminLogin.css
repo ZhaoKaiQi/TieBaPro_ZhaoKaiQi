@@ -1,0 +1,75 @@
+@CHARSET "UTF-8";
+/*把各个的civ的边距清零，自动居中*/
+body{
+	padding:0px;
+	font-size:12px;
+	font-family:宋体;
+	margin:0 auto;
+}
+
+span{
+	color:#999999;
+	margin-bottom:6px;
+}
+/*最上面的部分*/
+.top{
+	width:994px;
+	height:84px;
+	margin:0px auto;
+	/* background-color:green; */
+}
+/*用作空行的div*/
+.blankpram{
+	height:50px;
+	/* background-color:pink; */
+}
+/*中部div部分*/
+.middle{
+	width:892px;
+	height:297px;
+	background-color:#FFFFFF;
+}
+/*右边的div 表单部分*/
+.rightfrm{
+	width:322px;
+	height:297px;
+	margin-right:24px;
+	float:right;
+}
+/*对用户id登录的text文本框的设置*/
+#idlogin, #pwdlogin{
+	margin-top:5px;
+	margin-bottom:10px;
+}
+.text{
+	font-size:16px;
+	width:280px;
+	height:28px;
+	margin-top:2px;
+	line-hight:24px;
+	border:1px solid #CCCCCC;
+}
+
+/*对验证码框的设置*/
+.testcode {
+	margin-top:15px;
+}
+/*提示框*/
+#userPass1, #codemess1, #userid, #codemess, #userPass{
+	color:red;
+	border:1px solid #FFBDBF;
+	background-color:#FFEBEC;
+	height:16px;
+	position:absolute;
+	width:280px;
+}
+/*忘记密码超链接设置*/
+.forgerpass{
+	color:#333333;
+	text-decoration: none;
+}
+/* 鼠标放在忘记密码上的颜色和下划线 */
+a:hover{
+	text-decoration:underline;
+	color:red;
+}

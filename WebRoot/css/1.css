@@ -1,0 +1,73 @@
+
+.nav_bar{
+	margin:auto;
+	width:940px;
+	background-color:#226ddd;
+	background:url(http://tb2.bdstatic.com/tb/static-itieba3/img/nav_bg_aa1a44ce.png) scroll 0 0 repeat-x transparent
+}
+
+
+.nav_bar .nav_item,.nav_bar .nav_cur{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	height:32px;
+	vertical-align:top
+}
+
+.nav_bar .nav_item a,.nav_bar .nav_cur a{
+	line-height:32px;
+	color:#fff;
+	font-weight:bold;
+	font-size:14px;
+	display:block;
+	width:100px;
+	text-align:center;
+	text-decoration:none
+}
+
+.nav_bar .nav_item a{
+	background:url(http://tb2.bdstatic.com/tb/static-itieba3/img/nav_itb_bca23446.png) scroll 0 0 no-repeat transparent
+}
+
+.nav_bar .nav_item a:hover{
+	background:url(http://tb2.bdstatic.com/tb/static-itieba3/img/nav_itb_bca23446.png) scroll 0 -32px no-repeat transparent
+}
+
+.nav_bar .nav_cur a{
+	background:url(http://tb2.bdstatic.com/tb/static-itieba3/img/nav_itb_bca23446.png) scroll 0 -32px no-repeat transparent
+}
+
+.nav_item_hot{
+	position:relative;
+}
+
+.nav_item_hot_flag{
+	background-image:url("../image/icon_hot.gif");
+	background-repeat:no-repeat;
+	height:12px;
+	width:20px;
+	position:absolute;
+	top:-5px;
+	right:0
+}
+
+
+.nav_bar .nav_item,.nav_bar .nav_cur{
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+	height:32px;
+	vertical-align:top
+}
+
+.nav_bar .nav_item a,.nav_bar .nav_cur a{
+	line-height:32px;
+	color:#fff;
+	font-weight:bold;
+	font-size:14px;
+	display:block;
+	width:100px;
+	text-align:center;
+	text-decoration:none
+}

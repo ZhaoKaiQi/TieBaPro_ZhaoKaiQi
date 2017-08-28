@@ -1,0 +1,136 @@
+@CHARSET "UTF-8";
+body {
+color: #666;
+}
+body, fieldset, th, td, select, input, textarea {
+font-size: 12px;
+font-family: Verdana, "宋体", sans-serif;
+}
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, label, dl, dt, dd, fieldset, img {
+list-style: none;
+}
+
+.basicInfo{
+	width: 688px;
+	padding-top: 15px;
+	margin-left: 20px;
+}
+.personTable{
+	width: 500px;
+	height: 33px;
+	size: 50px;
+	margin-top: -10px;
+}
+
+.personTable td, .personTable th{
+	font-size: 14px;
+}
+
+*{
+margin:0;
+padding:0;
+}
+.tab{
+    width:728px;
+    margin-left:100px;
+    margin-top:100px;
+    /*border:1px solid;*/
+}
+.tab_menu{
+    clear:both;
+}
+.tab_menu li{
+    float:left;   /* 将导航头左飘 */
+    text-align:center;   /* 将文字居中 */
+    list-style:none;    /* 去除标记符号 */
+    background:#F1F1F1;  /* 设置默认背景色 */
+    border:1px solid #898989; /* 设置边框色 */
+    margin-right:4px;/*  //每个li之间的距离为4px */
+    cursor:pointer; /*  //鼠标浮上之后，会有小手的标示出现 */
+    padding:1px 6px; /* //控制li的内部距离 */
+    border-bottom:none; 
+    
+}
+.tab_menu li.hover{
+    background:#DFDFDF;
+}
+.tab_menu li.selected{  /* //为选中的选项加背景与颜色 */
+    color:#FFF; 
+    background:#6D84B4;
+}
+.tab_box{
+    clear:both; /* //清楚float效果的影响 */
+    height:728px; /* //设置高度为100px */
+    border:1px solid #898989; /* //设置内容体的边框样式 */
+}
+.hide{  /* //隐藏需要隐藏的内容div */
+    display:none;
+}
+
+.info_cols{
+	text-align: right;
+}
+.m_sum {
+    background: none repeat scroll 0% 0% rgb(222, 238, 255);
+    margin: 15px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 36px;
+}
+
+/*表单*/
+.m_form{}
+.m_form dl{padding-bottom:20px;position:relative;}
+.m_form .btn_wrap{padding-top:15px;}
+.m_form dt{float:left;width:250px;text-align:right;font-size:14px;line-height:26px;}
+.m_form dd{float:left;}
+.m_form dd a{padding-left:12px;}
+.m_form dd .b_link{font-size:12px;}
+.m_form .tips{position:absolute;bottom:5px;left:250px;color:#999;}
+.m_form .input_text{height:210px;height:26px;line-height:26px;}
+.m_form .btn_wrap .opt_btn{margin-right:12px;}
+.m_form .ipt_erro_tip{float:left;padding:3px 6px 3px 0;margin:3px 0 0 3px;background:#ffcccc;border:1px solid #f69696;color:#666; white-space:nowrap;}
+.m_form .ipt_erro_tip span{ white-space:nowrap;}
+.m_form .erro_icon{float:left;margin:0 5px;width:16px;height:16px;background:url(/images/member/secu_icon.png) no-repeat -60px -210px;}
+.m_form .text{font-size:14px;line-height:26px;}
+.m_form .fm_slect{margin-top:4px;}
+.m_form .opt_plus{padding-bottom:0px;}
+.m_form .opt_plus a{margin-left:12px;}
+.m_form .plus_msg{font-size:12px;line-height:18px;}
+.m_form .tips_plus{color:#999;}
+.m_form .long_tip{width:420px;padding:5px;background:#F4FFE5;border:1px solid #EFEFEF;color:#666;line-height:18px;}
+.m_form .rd_wrap{padding-right:16px;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0px;
+    margin: 0px;
+}
+
+.bindphone {
+    padding: 29px 20px 0px;
+    font-family: "宋体";
+    color: rgb(51, 51, 51);
+    min-height: 400px;
+}
+.bindphone .title {
+    color: rgb(102, 102, 102);
+    padding: 0px 0px 34px 20px;
+}
+.photo_change {
+    margin: -7px auto 0px;
+    width: 570px;
+    text-align: center;
+}
+.linedot1 {
+    background: url("/images/member/linedot.gif") repeat-x scroll 0% 0% transparent;
+    height: 1px;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    margin: 7px 0px 11px;
+}
+dl.resolve {
+    width: 566px;
+    margin: 0px auto;
+    color: rgb(102, 102, 102);
+    line-height: 1.7em;
+}

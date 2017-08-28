@@ -1,0 +1,190 @@
+@CHARSET "UTF-8";
+/* 右上角导航栏 */
+#com_userbar {
+    position: absolute;
+    font-family: Arial,宋体;
+    right: 0px;
+    top: 2px;
+    padding: 0px 10px;
+    z-index: 210;
+    font-size: 12px;
+    text-align: left;
+}
+#com_userbar ul li {
+    float: left;
+    padding: 0px;  
+    margin: 0px 0px 0px 6px;  
+    line-height: 18px;
+    display: inline;
+    
+} 
+/* .ul-gkk{
+	padding: 0px;
+	display: inline;
+	float: left;
+	list-style: none outside none;
+} */
+
+body{	
+	font-family:Arial,'宋体';	
+	font-size:12px;	
+}
+
+/* 关注的人模块外面最大的DIV */
+.ibody{
+	
+	margin:0px auto 10px;
+	
+	border: 1px solid rgb(220, 220, 220);
+    
+    background-image: url("../image/ibg_38cabbf5.png");
+    font-family: '宋体','微软雅黑','arial';
+}
+.w978{
+    clear: both;
+    width: 978px;
+    height:410px;
+    margin: 0px auto;
+
+}
+.clearfix {
+}
+
+/* 关注的人模块外面最大的DIV 之 里面DIV */
+.w750{
+	width:750px;
+}
+.fleft{
+	float:left;
+}
+
+
+/* 关注的人模块外面最大的DIV 之 里面DIV 之 里面右DIV */
+#content{
+	margin: 18px 10px 10px;
+    
+}
+.sub_nav{
+	margin: 14px 8px 0px;
+}
+
+.clearfix {
+}
+
+/* 关注之个人的模块 DIV */
+#follow .user{
+	height: 85px;
+    padding-top: 15px;
+    border-bottom: 1px dashed rgb(204, 204, 204);
+   
+}
+#follow .user .left{
+	float:left;
+	width:65px;
+}
+.face_link{
+	background-color: rgb(255, 255, 255);
+	
+	border: 1px solid rgb(212, 212, 212);
+    
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;
+    width:50px;
+}
+
+#follow .user .mid {
+    float: left;
+    line-height: 23px;
+}
+#follow .user .name {
+    margin-right: 15px;
+    margin-right-value: 15px;
+    
+}
+
+#follow{
+		
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    
+}
+
+
+p, div, td {
+    word-break: break-all;
+}
+
+.clearfix {
+}
+
+#follow a {
+	 text-decoration: none;
+}
+
+
+
+body, button, input, select, textarea, td, th {
+    font: 12px/18px Arial,'宋体';
+      
+}
+
+/* 取消按钮 */
+#follow .user .right {
+    float: right;
+    width: 75px;
+}
+button, input[type="button"], input[type="submit"], input[type="reset"], input[type="file"] {
+    cursor: pointer;
+}
+.btn_unfollow {
+    width: 64px;
+    height: 20px;
+    background: url("../image/iHome_c18b20f3.png") no-repeat scroll 0px -180px transparent;
+    border: 0px none; 
+}
+
+/* 大模块之右模块  */
+.fright {
+    float: right;
+}
+.w228 {
+    width: 228px;
+}
+
+/* 右模块之个人信息模块 */
+#aside_person_info {
+    margin: 5px 10px 10px;
+       
+}
+/* 模块头 */
+.aside_p_info_head {
+    border-bottom: 1px solid rgb(208, 219, 237);
+    font-size: 12px;
+    line-height: 25px;
+}
+
+/* 模块尾 */
+.aside_person_info_wraper {
+    margin: 10px 0px 15px;
+    overflow: hidden;
+    
+    width: 100%;
+}
+/* 自己头像 */
+.aside_userface_wraper {
+    float: left;
+    margin-top: 5px;
+}
+
+.aside_userface_border {
+    border: 1px solid rgb(212, 212, 212);
+    width: 64px;
+    height: 64px;
+    text-align: center;
+}
+
+.aside_user_profile {
+    float: left;
+    margin-left: 9px;
+      
+}

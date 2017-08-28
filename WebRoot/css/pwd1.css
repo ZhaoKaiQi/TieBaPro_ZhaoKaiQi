@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+.line1 {
+	position: absolute;
+	left: 448px;
+	top: 180px;
+	background: white;
+	border: 1px red solid;
+	width: 455px;
+	height: 381px;
+	display:none;
+	background-color:#EFEFEF;
+}
+
+.line2 {
+	margin-left:60px;
+	width: auto;
+	line-height: 35px;
+}
+
+.line3 {
+	margin-left:60px;
+	width: auto;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+}
+
+.line4 {
+	margin:30px 162px 10px;
+	width: auto;
+	height: 50px;
+	align:center;
+}
+
+.line5 {
+	margin-left:45px;
+	width: auto;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+}
+
+.line6 {
+	margin:30px 162px 10px;
+	width: auto;
+	height: 35px;
+	line-height: 35px;
+}
+
+.password_input1 {
+	border: 1px solid rgb(55, 123, 203);
+	padding: 7px 0px 7px 8px;
+	height: 16px;
+	line-height: 16px;
+	overflow: hidden;
+	color: rgb(51, 51, 51);
+	font-size: 14px;
+	width: 200px;
+}
+
+.password_input2 {
+	border: 1px solid rgb(55, 123, 203);
+	padding: 7px 0px 7px 8px;
+	height: 16px;
+	line-height: 16px;
+	overflow: hidden;
+	color: rgb(51, 51, 51);
+	font-size: 14px;
+	width: 100px;
+}
+
+
+.input-msg {
+	line-height: 32px;
+	float: left;
+	color: #da1111;
+	margin-left: 10px;
+	font-size: 12px;
+}

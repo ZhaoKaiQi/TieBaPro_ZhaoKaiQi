@@ -1,0 +1,207 @@
+@CHARSET "UTF-8";
+
+.Register_account {
+	position: absolute;
+	left: 272px;
+	top: 108px;
+	background: white;
+	border: 1px solid #303842;
+	width: 410px;
+	height: 170px;
+	background-color: #F8F8F8;
+	display: none;
+}
+.Register_name {
+	position: absolute;
+	left: 466px;
+	top: 250px;
+	background: white;
+	border: 1px solid #303842;
+	width: 410px;
+	height: 170px;
+	background-color: #F8F8F8;
+	display: none;
+}
+
+.login_window {
+	position: absolute;
+	left: 446px;
+	top: 94px;
+	background: white;
+	border: 1px red solid;
+	width: 458px;
+	height: 391px;
+}
+
+.login_line1 {
+	width: auto;
+	height: 35px;
+	line-height: 35px;
+	font-size: 16px;
+	font-family: "宋体";
+	font-weight: bold;
+	color: rgb(51, 51, 51);
+	text-indent: 20px;
+	margin-left: 20px;
+	display: inline;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.login_line2 {
+	height: 40px;
+	border-style: solid;
+	border-color: rgb(212, 212, 212);
+	border-width: 1px 1px 1px 1px;
+	border-radius:5px;
+	list-style: none;
+	padding: 0px;
+	margin: 20px 120px 10px 120px;
+	border-image: none;
+	clear: both;
+	list-style: none outside none;
+}
+
+.login_line2_5 {
+	height: 40px;
+	list-style: none;
+	padding: 0px;
+	margin: 20px 105px 10px 105px;
+	border-image: none;
+	clear: both;
+	list-style: none outside none;
+}
+
+.login_line2_3 {
+	border-radius:5px;
+	width: 106px;
+	height: 35px;
+	float: left;
+	line-height: 34px;
+	font-family: '华文楷体';
+	font-size: 18px;
+	text-align: center;
+	display: inline;
+	background-color:#DFCC7F;
+}
+
+.login_line2_4 {
+	border-radius:5px;
+	width: 106px;
+	height: 35px;
+	float: right;
+	line-height: 34px;
+	font-family: '华文楷体';
+	font-size: 18px;
+	text-align: center;
+	background-color:#FFFFFF;
+}
+
+.login_line2_1 {
+	width: 106px;
+	height: 35px;
+	float: left;
+	line-height: 34px;
+	font-family: '华文楷体';
+	font-size: 18px;
+	text-align: center;
+	display: inline;
+}
+
+.login_line2_2 {
+	width: 106px;
+	height: 35px;
+	float: left;
+	line-height: 34px;
+	font-family: '华文楷体';
+	font-size: 18px;
+	text-align: center;
+}
+
+.login_line3 {
+	display: block;
+	height: 32px;
+	position: relative;
+	overflow: hidden;
+	margin: 30px 40px 25px 30px;
+}
+
+.login_line3_1 {
+	width: 65px;
+	float: left;
+	text-align: right;
+	padding-right: 10px;
+	line-height: 32px;
+	font-size: 16px;
+	font-family: '宋体';
+}
+
+.login_line3_2 {
+	border-radius:5px;
+	width: 270px;
+	padding: 0px 10px 0px 6px;
+	font-family: '宋体';
+	float: left;
+	border-left: 1px solid rgb(204, 204, 204);
+	border-width: 1px;
+	border-style: solid;
+	border-color:red;
+	height: 30px;
+	font-size: 14px;
+	color: rgb(51, 51, 51);
+	transition-property: all;
+	transition-duration: 0.5s;
+	-moz-box-sizing: content-box;
+}
+
+.login_line4 {
+	display: block;
+	height: 32px;
+	position: relative;
+	overflow: hidden;
+	margin: 30px 40px 25px 50px;
+}
+
+.login_line4_1 {
+	width: 45px;
+	float: left;
+	text-align: right;
+	padding-right: 10px;
+	line-height: 32px;
+	font-size: 16px;
+	font-family: '宋体';
+}
+
+.login_line4_2 {
+	border-radius:5px;
+	width: 270px;
+	padding: 0px 10px 0px 6px;
+	font-family: '宋体';
+	float: left;
+	border-left: 1px solid rgb(204, 204, 204);
+	border-width: 1px;
+	border-style: solid;
+	border-color:red;
+	height: 30px;
+	font-size: 14px;
+	color: rgb(51, 51, 51);
+	transition-property: all;
+	transition-duration: 0.5s;
+	-moz-box-sizing: content-box;
+}
+
+.login_line5 {
+	display: block;
+	height: 32px;
+	position: relative;
+	overflow: hidden;
+	margin: 30px 100px 25px 100px;
+}
+
+.login_line6 {
+	display: block;
+	font-size: 13px;
+	position: relative;
+	overflow: hidden;
+	margin: 30px 40px 25px 180px;
+}

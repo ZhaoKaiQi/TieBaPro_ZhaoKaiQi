@@ -1,0 +1,40 @@
+﻿
+body, ul, p { margin: 0; padding: 0; }
+body { font: normal 12px 微软雅黑; }
+ul, li, dt, dd, dl { list-style: none; padding: 0; margin: 0; }
+a { text-decoration: none; }
+img { border: 0; }
+h1 { font-size: 100%; font-weight: normal; padding: 0; margin: 0; }
+a { text-decoration: none; color: #6c6c6c; }
+    a:hover { color: #ff4200; }
+h1 { text-indent: -5000px; display: block; height: 0; font-size: 0; line-height: 0; overflow: hidden; }
+body { min-width: 1000px; padding-top: 42px; background-color: rgb(187, 187, 187); color: #6c6c6c; }
+.header { width: 100%; max-width: 1920px; margin: 0 auto; position: relative; }
+.navIL, .navIM, .logoPNG { background-image: url(../images/nav.png); }
+.topNav { height: 75px; width: 100%; position: absolute; left: 0; top: 0; margin: 0 auto; overflow: hidden; z-index: 4; }
+.topNav2 { width: 200%; position: absolute; left: -50%; top: 0; }
+.navBox { width: 1920px; margin: 0 auto; position: relative; }
+.navIndexBg { width: 1920px; position: absolute; height: 75px; left: 0; top: 0; }
+.navIL { width: 840px; position: absolute; left: 0; top: 0; height: 75px; background-repeat: repeat-x; background-position: 0 -75px; }
+.navIR { left: 1080px; }
+.navIM { left: 840px; position: absolute; width: 240px; height: 75px; top: 0; }
+.navMain { width: 1120px; margin: 0 auto; height: 242px; position: relative; }
+.navIndex { padding-left: 152px; height: 55px; }
+    .navIndex li { color: #000; font-size: 14px; float: left; line-height: 50px; height: 55px; width: 112px; text-align: center; }
+li.nav3, a.nav4:hover { background-position: -1120px -168px; }
+.navIndex a { color: #000; display: block; width: 112px; height: 50px; }
+    .navIndex a:hover { color: #ff3b00; }
+.nav1 { margin-right: 142px; }
+.navSub { width: 1120px; height: 187px; display: none; overflow: hidden; }
+    .navSub a { color: #000; display: block; height: 26px; margin: 0 auto; width: 108px; }
+        .navSub a:hover { color: #ff3b00; background-position: -1232px 0; }
+    .navSub dl { width: 112px; float: left; text-align: center; line-height: 26px; position: relative; padding-top: 23px; height: 134px; }
+    .navSub dt { position: absolute; width: 100%; height: 100%; left: 0; top: 0; text-indent: -5000px; background-position: -1120px 0; display: none; }
+    .navSub dd { position: relative; }
+.nav2 { margin-left: 264px; _margin-left: 132px; }
+.logo { width: 100%; position: absolute; left: 0; top: 0; overflow: hidden; height: 124px; }
+.logoBox { width: 112px; height: 124px; margin: 0 auto; position: relative; z-index: 5; top: 6px; left: 2px; }
+h1.logoPNG { width: 112px; height: 124px; background-position: 0 -150px; display: block; text-indent: -5000px; position: relative; top: -8px; left: -1px; }
+.header { height: 500px; }
+.logoBox { position: relative; z-index: 3; }
+.navSub dt, .navSub, li.nav3, a.nav4:hover, .navSub a:hover { background-image: url(../images/navSub.png); background-repeat: no-repeat; }

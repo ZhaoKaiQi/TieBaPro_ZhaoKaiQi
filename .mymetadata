@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="TieBaPro_ZhaoKaiQi"
+  id="myeclipse.1498229493178"
+  context-root="/TieBaPro_ZhaoKaiQi"
+  j2ee-spec="5.0"
+  archive="TieBaPro_ZhaoKaiQi.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

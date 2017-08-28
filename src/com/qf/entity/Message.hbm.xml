@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.qf.entity">
+	<class name="Message" table="message">
+		<id name="msgId" column="msgId">
+			<generator class="native"></generator>
+		</id>
+		<property name="msgTime" column="msgTime"></property>
+		<property name="msgContent" column="msgContent"></property>
+		<property name="msgTitle" column="msgTitle"></property>
+		<property name="picUrl" column="picUrl"></property>
+		<set name="replays" cascade="all">
+			<key column="msgId"></key>
+			<one-to-many class="Replay"></one-to-many>
+		</set>
+	</class>
+</hibernate-mapping>

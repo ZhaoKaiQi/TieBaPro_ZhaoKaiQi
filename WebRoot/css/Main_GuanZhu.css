@@ -1,0 +1,66 @@
+@CHARSET "UTF-8";
+p, div, td {
+    word-break: break-all;0100
+}
+.right_aside {
+    background: none repeat scroll 0% 0% rgb(247, 249, 251);
+    width: 200px;
+    margin: 70px 400px 0px 39px;   
+    float: right;
+    border-top: 1px solid rgb(215, 219, 222);
+    
+}
+.right_aside_woguanzhu{
+	/* padding: 15px 0px 30px 15px; */
+	margin:auto auto auto auto;
+}
+.right_aside_guanzhuwo{
+	/* padding: 15px 0px 30px 15px; */
+	margin:auto auto auto auto;
+}
+
+.ihome_aside_title {
+    font-family: STHeiti,"Microsoft Yahei",Arial,"宋体";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgb(73, 74, 76);
+}
+
+.ihome_aside_title .concern_num {
+    color: rgb(181, 182, 182);
+    font-size: 12px;
+    vertical-align: top;
+}
+
+ul{
+	/* 去掉前面的点 */
+	list-style: none outside none;
+	margin:0px;
+	padding:0px;
+}
+
+.concern_item {
+    float: left;
+    padding: 10px 10px 0px 0px;
+    height: 45px;
+    width: 45px;
+}
+.concern_item a {
+    border-radius: 4px; 
+    display: block;
+    height: 45px;
+    width: 45px;
+}
+a {
+    color: rgb(4, 73, 190);
+    text-decoration: none;
+    outline: 0px none;
+}
+.concern_item img {
+    border-radius: 4px;
+    height: 43px;
+    width: 43px;
+    border: 1px solid white;
+    cursor: pointer;
+}

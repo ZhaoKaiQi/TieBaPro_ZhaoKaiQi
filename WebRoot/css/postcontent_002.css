@@ -1,0 +1,212 @@
+.com_skinad_left {
+	position: absolute;
+	top: 300px;
+	right: 50%;
+	margin-right: 490px;
+	display: block;
+	height: 600px
+}
+.com_skinad_right {
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	margin-left: 490px;
+	display: block;
+	height: 600px
+}
+
+.com_skinad_left.com_skinad_star,.com_skinad_right.com_skinad_star {
+	top: 400px
+}
+
+#game_couplet_pb_left {
+	position: fixed;
+	_position: absolute;
+	top: 98px;
+	left: 0
+}
+
+#game_couplet_pb_right {
+	position: fixed;
+	_position: absolute;
+	top: 98px;
+	right: 0
+}
+
+.game_couplet_pb_content {
+	width: 120px;
+	height: 200px
+}
+
+.game_couplet_pb_close {
+	display: block;
+	background-color: #f2f2f2;
+	padding: 3px;
+	color: #666
+}
+
+.game_couplet_pb_close:hover {
+	text-decoration: none
+}
+
+.game_couplet_pb_close span {
+	color: #a6a6a6;
+	vertical-align: top;
+	margin: 0 5px
+}
+
+#game_couplet_pb_fl,#game_couplet_pb_fr {
+	position: relative
+}
+
+.game_couplet_left_anchor {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 120px;
+	height: 200px;
+	background-color: #fff;
+	opacity: 0;
+	filter: alpha(opacity = 0)
+}
+
+a {
+	color: #1d53bf;
+	outline: 0
+}
+
+a:link,a:visited {
+	text-decoration: none
+}
+a:hover {
+	text-decoration: underline
+}
+
+.red {
+	color: #f60
+}
+.gray {
+	color: #999
+}
+
+.p_postlist {
+	position: relative;
+	_position: static;
+	border-style: solid;
+	border-width: 2px 0;
+	border-color: #999;
+	z-index: 1
+}
+
+.editor_theme_2 {
+	float: left;
+	width: 718px;
+	margin: 0 auto
+}
+
+#editor .new_tiezi_tip {
+	line-height: 30px;
+	margin: 32px 0 10px;
+	overflow: hidden
+}
+
+#editor .editor_title_txt {
+	color: #333;
+	font-size: 14px;
+	font-weight: bold;
+	width: 60px;
+	line-height: 30px
+}
+
+.sign_highlight {
+	color: #ff7f3e
+}
+
+.pic_to_album_tip {
+	width: 90px;
+	height: 25px;
+	display: none;
+	position: absolute;
+	z-index: 10;
+	background:
+		url()
+}
+
+.top10_content_icon {
+	background:
+		url()
+		no-repeat -230px -113px
+}
+
+.tieba_top10_content .top3 {
+	background:
+		url(http://tb2.bdstatic.com/tb/static-pb/img/pb_css_pic_f4af4bdb.png)
+		no-repeat -216px -113px
+}
+
+.j_quick_reply {
+	background:
+		url(http://tb2.bdstatic.com/tb/static-pb/img/pb_css_pic_f4af4bdb.png)
+		no-repeat -167px -8px
+}
+
+.l_lzonly {
+	background:
+		url(http://tb2.bdstatic.com/tb/static-pb/img/pb_css_pic_f4af4bdb.png)
+		no-repeat -8px -7px
+}
+
+.l_lzonly_cancel {
+	background:
+		url(http://tb2.bdstatic.com/tb/static-pb/img/pb_css_pic_f4af4bdb.png)
+		no-repeat -408px -5px
+}
+
+.p_favthr_main {
+	background:
+		url(http://tb2.bdstatic.com/tb/static-pb/img/pb_css_pic_f4af4bdb.png)
+		no-repeat -8px -7px;
+	cursor: pointer
+}
+
+.louzhubiaoshi {
+	background:
+		url(http://tb2.bdstatic.com/tb/static-pb/img/pb_css_pic_f4af4bdb.png)
+		no-repeat -172px -120px
+}
+
+.d_sign_split {
+	background:
+		url(http://tb2.bdstatic.com/tb/static-pb/img/pb_css_pic_f4af4bdb.png)
+		no-repeat -8px -240px
+}
+
+.d_sign_split_bright {
+	background:
+		url(http://tb2.bdstatic.com/tb/static-pb/img/pb_css_pic_f4af4bdb.png)
+		no-repeat -8px -240px
+}
+
+.j_lzl_p a {
+	background:
+		url(http://tb2.bdstatic.com/tb/static-pb/img/pb_css_pic_f4af4bdb.png)
+		no-repeat -510px -7px
+}
+
+.lzl_panel_submit {
+	background:
+		url(http://tb2.bdstatic.com/tb/static-pb/img/pb_css_pic_f4af4bdb.png)
+		no-repeat -344px -7px
+}
+
+.share_thread .bds_more {
+	background:
+		url(http://tb2.bdstatic.com/tb/static-pb/img/pb_css_pic_f4af4bdb.png)
+		-80px -183px !important
+}
+
+.share_thread .dis_share_num {
+	background:
+		url(http://tb2.bdstatic.com/tb/static-pb/img/pb_css_pic_f4af4bdb.png)
+		-80px -150px !important
+}

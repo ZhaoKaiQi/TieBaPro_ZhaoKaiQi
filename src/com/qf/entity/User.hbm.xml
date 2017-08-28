@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.qf.entity">
+	<class name="User" table="user">
+		<id name="userId" column="userId">
+			<generator class="native"></generator>
+		</id>
+		<property name="userName" column="userName"></property>
+		<property name="userMail" column="userMail"></property>
+		<property name="userYzm" column="userYzm"></property>
+		<property name="userPwd" column="userPwd"></property>
+		<property name="userGender" column="userGender"></property>
+		<property name="userBarAge" column="userBarAge"></property>
+		<property name="userHeadImage" column="userHeadImage"></property>
+		<property name="userAddr" column="userAddr"></property>
+		<property name="landingTime" column="landingTime"></property>
+		<property name="userRoot" column="userRoot"></property>
+		<property name="userGrade" column="userGrade"></property>
+		<property name="userPoints" column="userPoints"></property>
+		<set name="AttentionAndFans" cascade="all">
+			<key column="userId"></key>
+			<one-to-many class="AttentionAndFans"></one-to-many>
+		</set>
+		<set name="replays" cascade="all">
+			<key column="userId"></key>
+			<one-to-many class="Replay"></one-to-many>
+		</set>
+	</class>
+</hibernate-mapping>

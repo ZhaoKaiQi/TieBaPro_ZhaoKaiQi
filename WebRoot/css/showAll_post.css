@@ -1,0 +1,91 @@
+@CHARSET "UTF-8";
+body{
+	padding:0px;
+	font-size:12px;
+	font-family:宋体;
+	margin:0 auto;
+	color:#333333;
+}
+.font_style1{
+	font-size:16px;
+	font-family:楷体;
+	margin-right:4px;
+}
+/*表格外部div层*/
+#tabdiv{
+	margin:0px auto;
+}
+/*用于对帖子进行搜索的div*/
+.searchdiv{
+	width:100%;
+	height:50px;
+
+	margin:0px auto;
+}
+/*对文本框的设置*/
+.searchtext{
+	height:28px;
+	border:1px solid #808080;
+	padding: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+/*对搜索放大镜图片的设置*/
+.searchimg{
+	position:relative;
+	top:10px;
+}
+/*显示数据的表格*/
+#tab {
+	border:1px solid green;
+	border-collapse: collapse;
+	text-algin:center;
+}
+/*对超链接*/
+tr, td{
+	text-align:center;
+}
+a:link{
+	text-decoration:none;
+	color:#333333;
+	
+}
+a:hover{
+	text-decoration:underline;
+	color:red;
+}
+/*对功能列表的功能项设置间距*/
+.mylink span{
+	margin-left:3px;
+	margin-right:3px;
+	background-color:green;
+}
+#letfpage, #rightpage{
+	float:left;
+	width:50%;
+	font-size:16px;
+}
+#rightpage{
+	padding-top:5px;
+}
+#letfpage span{
+	position:relative;
+	top:5px;
+	margin-left:15px;
+	
+}
+/*分页的页码链接*/
+#rightpage a{
+	border: 1px solid #E7ECF0;
+	color: #0000CD;
+	height: 22px;
+	margin-right: 5px;
+	margin-top:5px;
+	
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+	width: auto;
+	padding: 0px 8px;
+	
+}

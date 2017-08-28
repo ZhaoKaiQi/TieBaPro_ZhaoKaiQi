@@ -1,0 +1,7 @@
+body { font-family:Verdana; font-size:14px; margin:0;}
+#container {margin:0 auto; width:100%;}
+#mainContent { height:620px; margin-bottom:5px;}
+#sidebar { float:left; width:200px; height:620px;}
+#content { margin-left:5px !important; margin-left:202px; height:620px;}
+#footer { height:80px;}
+#link{text-decoration: none;}

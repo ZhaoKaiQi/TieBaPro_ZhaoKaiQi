@@ -1,0 +1,12 @@
+.skin_1001 .headinfo_wrap {
+	background:
+		/* url(http://tb2.bdstatic.com/tb/static-ihome/img/head_1001_5faf9fcc.jpg) */
+		url(../images/head2.jpg)
+		no-repeat
+}
+
+.skin_1001 .wrap1 {
+	background:
+		url(http://tb2.bdstatic.com/tb/static-ihome/img/bg_1001_wrap1_1d409998.jpg)
+		no-repeat scroll center 92px #96d4f2
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.qf.entity">
+	<class name="AttentionAndFans" table="attentionAndFans">
+		<id name="afNum" column="afNum">
+			<generator class="native"></generator>
+
+		</id>
+		<property name="afState" column="afState"></property>
+		<many-to-one name="user" column="userId" class="User"
+			cascade="save-update"> 
+		</many-to-one>
+		<many-to-one name="user2" column="userId2" class="User"
+			cascade="save-update"> 
+		</many-to-one>
+	</class>
+</hibernate-mapping>

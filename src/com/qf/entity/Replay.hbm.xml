@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.qf.entity">
+	<class name="Replay" table="Replay">
+		<id name="repId" column="repId">
+			<generator class="native"></generator>
+		</id>
+		<property name="repContent" column="repContent"></property>
+		<property name="repTime" column="repTime"></property>
+		<property name="picUrl" column="picUrl"></property>
+		
+		<many-to-one name="message" column="msgId" class="Message"
+			cascade="save-update"> 
+		</many-to-one>
+		<many-to-one name="user" column="userId" class="User"
+			cascade="save-update"> 
+		</many-to-one>
+	</class>
+</hibernate-mapping>
